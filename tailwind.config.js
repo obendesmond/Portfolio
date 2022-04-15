@@ -10,6 +10,7 @@ module.exports = {
         myGreen: "#009743",
         myYellow: "#ffcb0a",
         myDark: "#0F172A",
+        myBorder: "#0F102A",
       },
     },
     screens: {
