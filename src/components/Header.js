@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function componentName() {
   return (
-    <div className="container flex flex-row max-w-2xl sticky top-0 z-50 bg-opacity-90 bg-clip-padding justify-center bg-myDark align-middle border-2 backdrop-blur-sm border-myYellow border-t-0 mx-auto rounded-b-full">
+    <div className="container flex flex-row max-w-2xl sticky top-0 z-50 bg-clip-padding justify-center bg-myDark bg-opacity-80 backdrop-blur-[2px] align-middle border-2 border-myYellow border-t-0 mx-auto rounded-b-full">
       <Image
         width={250}
         height={60}

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Button from "./Button";
-import Title from "./Title";
+import Button from "../Button";
+import Title from "../Title";
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <div className="flex bg-myDark flex-col items-center px-10 -mt-20 align-middle pt-40 pb-10 border-b-[20px] border-myBorder md:flex-row">
       {/* first part */}

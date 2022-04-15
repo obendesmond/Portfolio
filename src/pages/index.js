@@ -1,9 +1,10 @@
-import About from "../components/About";
-import Hero from "../components/Hero";
+import About from "../components/sections/AboutSection";
+import Hero from "../components/sections/HeroSection]";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Head from "next/head";
-import Skills from "../components/Skills";
+import Skills from "../components/sections/SkillsSection";
+import ContactLinks from "../components/ContactLinks";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
 
       <Header />
+      <ContactLinks />
       <Hero />
       <About />
       <Skills />
