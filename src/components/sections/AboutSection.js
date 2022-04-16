@@ -35,7 +35,7 @@ export default function AboutSection() {
           <span className="underline decoration-myYellow">
             NOW! WHAT DO YOU WANT ME TO PAINT?
           </span>
-          ” .
+          ”.
         </BodyText>
       </div>
       <div>

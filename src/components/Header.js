@@ -2,15 +2,17 @@ import Image from "next/image";
 
 export default function componentName() {
   return (
-    <div className="container flex flex-row max-w-2xl sticky top-0 z-50 bg-clip-padding justify-center bg-myDark bg-opacity-80 backdrop-blur-[2px] align-middle border-2 border-myYellow border-t-0 mx-auto rounded-b-full">
-      <Image
-        width={250}
-        height={60}
-        src="/assets/desmond.png"
-        alt="desmond"
-        experienceexperience
-        objectFit="contain"
-      />
+    <div className="container flex flex-row max-w-2xl sticky top-0 z-50 bg-clip-padding justify-center bg-myDark bg-opacity-80 backdrop-blur-[2px] border-2 border-myYellow border-t-0 mx-auto rounded-b-full">
+      <a href="#home">
+        <Image
+          width={250}
+          height={60}
+          src="/assets/desmond.png"
+          alt="desmond"
+          objectFit="contain"
+          className="cursor-pointer hover:w-[260]"
+        />
+      </a>
       <div className="hidden md:flex flex-row space-x-10 my-auto text-white">
         <a
           href="#about"
@@ -37,7 +39,7 @@ export default function componentName() {
           Portfolio
         </a>
       </div>
-      <div className="flex md:hidden text-myYellow my-auto">MENU</div>
+      {/* <div className="flex md:hidden text-myYellow my-auto">MENU</div> */}
     </div>
   );
 }

@@ -14,8 +14,14 @@ export default function HeroSection() {
           </span>{" "}
           Oben
         </Title>
-        <h2 className="text-4xl text-center text-gray-400 md:text-left">
-          Freelance Frontend Developer
+        <h2 className="text-2xl text-center text-gray-400 md:text-left">
+          &quot;I just want to make beautiful things, even when no one
+          cares&quot;-{" "}
+          <span className="underline decoration-myYellow">
+            Frontend Engineer.
+          </span>{" "}
+          Let&apos;s make something{" "}
+          <span className="underline decoration-myGreen">React-ive</span>
         </h2>
         <div className="flex flex-row justify-center md:justify-start space-x-10">
           <Button text="Contact Me" />
