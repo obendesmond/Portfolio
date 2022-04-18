@@ -2,11 +2,17 @@ import Image from "next/image";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import LinkIcon from "@mui/icons-material/Link";
 import CustomTooltip from "./CustomTooltip";
+import { IconButton } from "@mui/material";
 
-export default function Certificate({ imgSrc, logos, courseLink }) {
+export default function Card({ imgSrc, logos, courseLink }) {
   const ActionLink = (Icon, title) => (
     <CustomTooltip title={title}>
-      <Icon className="cursor-pointer" />
+      <IconButton
+        disableRipple
+        className="cursor-pointer text-white bg-myGreen hover:text-myDark hover:bg-myYellow"
+      >
+        <Icon />
+      </IconButton>
     </CustomTooltip>
   );
 
@@ -34,7 +40,7 @@ export default function Certificate({ imgSrc, logos, courseLink }) {
           ))}
         </div>
 
-        <div className=" flex flex-row justify-between text-gray-400 flex-[0.2]">
+        <div className=" flex flex-row space-x-2 justify-between flex-[0.2]">
           {ActionLink(VisibilityIcon, "view doc")}
           {ActionLink(LinkIcon, "see curriculum")}
         </div>

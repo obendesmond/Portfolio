@@ -1,6 +1,6 @@
 import Image from "next/image";
 import BodyText from "../BodyText";
-import Certificate from "../Certificate";
+import Card from "../Card";
 import Skill from "../Skill";
 import Title from "../Title";
 
@@ -54,11 +54,11 @@ export default function EducationSection() {
       </div>
 
       <div className="grid lg:grid-cols-3 gap-6">
-        <Certificate
+        <Card
           imgSrc="REACT-Cert.jpg"
           logos={["react.png", "html.png", "css.png", "git.png"]}
         />
-        <Certificate
+        <Card
           imgSrc="REDUX-Cert.jpg"
           logos={[
             "redux-logo.png",
@@ -68,17 +68,17 @@ export default function EducationSection() {
             "git.png",
           ]}
         />
-        <Certificate
+        <Card
           imgSrc="MERN-Cert.jpg"
           logos={["Node.png", "react.png", "html.png", "css.png", "git.png"]}
         />
-        {/* <Certificate imgSrc="MERN-Cert.jpg" />
-        <Certificate imgSrc="REDUX-Cert.jpg" />
-        <Certificate imgSrc="HTML-Cert3.jpg" />
-        <Certificate imgSrc="JS-Cert.jpg" />
-        <Certificate imgSrc="NODE-Cert.jpg" />
-        <Certificate imgSrc="RN-Cert.jpg" />
-        <Certificate imgSrc="GIT-Cert.jpg" /> */}
+        {/* <Card imgSrc="MERN-Cert.jpg" />
+        <Card imgSrc="REDUX-Cert.jpg" />
+        <Card imgSrc="HTML-Cert3.jpg" />
+        <Card imgSrc="JS-Cert.jpg" />
+        <Card imgSrc="NODE-Cert.jpg" />
+        <Card imgSrc="RN-Cert.jpg" />
+        <Card imgSrc="GIT-Cert.jpg" /> */}
       </div>
       <div className="pt-10">
         <a

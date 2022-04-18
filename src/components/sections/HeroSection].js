@@ -7,8 +7,8 @@ export default function HeroSection() {
     <div className="flex bg-myDark flex-col items-center px-10 -mt-20 align-middle pt-40 pb-10 border-b-[20px] border-myBorder md:flex-row">
       {/* first part */}
       <div className="flex flex-col space-y-10 mb-20 md:mb-0 ">
-        <Title>
-          I&apos;m Ako{" "}
+        <Title heroTitle>
+          Hi, I&apos;m{" "}
           <span className="text-myYellow hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-myGreen to-myYellow">
             Desmond
           </span>{" "}
@@ -16,7 +16,7 @@ export default function HeroSection() {
         </Title>
         <h2 className="text-2xl text-center text-gray-400 md:text-left">
           &quot;I just want to make beautiful things, even when no one
-          cares&quot;-{" "}
+          cares&quot;-
           <span className="underline decoration-myYellow">
             Frontend Engineer.
           </span>{" "}

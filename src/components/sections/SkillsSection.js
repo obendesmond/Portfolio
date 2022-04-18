@@ -28,30 +28,30 @@ export default function SkillsSection() {
         <Skill title="React Native" percentage={55} />
         <div className="lg:col-span-2">
           <BodyText>
-            FullStack Engineer believing in the power of web and mobile app
-            development. Experienced in most stages of advanced full stack
+            Frontend Engineer believing in the power of web and mobile app
             development. Focused on{" "}
             <span className="underline decoration-myYellow">
               frontend development
             </span>{" "}
             but yet building skills on{" "}
             <span className="underline decoration-myGreen">
-              backend and mobile app development
+              backend(NodeJS) and mobile app(React Native) development
             </span>
-            , CSS/JS animations, semantics, accessibility, and progressive
-            enhancement including the MVC structure of development. However,
-            I&apos;m keen on exploring new languages and I always try to stay
-            up-to-minute. Apart from these, I have other computer skills, such
-            as I fluently use{" "}
+            . Experienced in working with the MVC architecture and the{" "}
+            <span className="underline decoration-myYellow">Agile</span> way of
+            development. I&apos;m keen on exploring new technologies and I
+            always try to stay up-to-minute. Apart from these, I have other
+            skills, such as{" "}
+            <span className="underline decoration-myGreen">Communication</span>,
+            working in a team and learning new skills. I fluently use{" "}
             <span className="underline decoration-myYellow">
               Adobe Photoshop
             </span>{" "}
             and{" "}
             <span className="underline decoration-myGreen">Illustrator</span> to
             create some web and mobile assets, Adobe XD for designing the
-            websites before coding them. I also have basic knowledge in Blender,
-            Unreal Engine, Adobe Premier and Adobe After Effect and I use them
-            as a hobby.
+            websites before coding them. I&apos;m ready and willing to{" "}
+            <span className="underline decoration-myYellow">join a team</span>.
           </BodyText>
         </div>
       </div>

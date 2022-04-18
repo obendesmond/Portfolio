@@ -6,6 +6,7 @@ import Head from "next/head";
 import SkillsSection from "../components/sections/SkillsSection";
 import ContactLinks from "../components/ContactLinks";
 import EducationSection from "../components/sections/EducationSection";
+import PortfolioSection from "../components/sections/PortfolioSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <AboutSection />
       <SkillsSection />
       <EducationSection />
+      <PortfolioSection />
     </div>
   );
 }

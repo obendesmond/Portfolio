@@ -9,7 +9,6 @@ export default function AboutSection() {
         <div className="mb-10">
           <Title>
             <span
-              // className="underline decoration-myYellow decoration-2 underline-offset-8"
               className="text-myYellow bg-clip-text text-transparent
           bg-gradient-to-r from-myYellow to-myGreen"
             >
@@ -26,7 +25,8 @@ export default function AboutSection() {
             learning new technologies
           </span>{" "}
           which has contributed to my adaptive skills, easily adapting to new
-          environments and new tech. <br></br>“For me,{" "}
+          environments and new tech.
+          <br></br>“For me,{" "}
           <span className="underline decoration-myYellow">
             frontend development
           </span>{" "}
