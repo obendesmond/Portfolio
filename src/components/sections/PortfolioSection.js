@@ -8,7 +8,10 @@ import CustomTooltip from "../CustomTooltip";
 
 export default function PortfolioSection() {
   return (
-    <div className="flex flex-col mx-auto bg-myDark border-t-[20px] border-myBorder px-10 ">
+    <div
+      id="portfolio"
+      className="flex flex-col mx-auto bg-myDark border-t-[20px] border-myBorder px-10 "
+    >
       {/* top title */}
       <div className="mt-10 mb-10">
         <Title right>
@@ -303,7 +306,7 @@ export default function PortfolioSection() {
           href="#more-education"
           className="text-gray-400 font-extrabold text-2xl"
         >
-          See More...
+          See More Work...
         </a>
       </div>
     </div>

@@ -6,7 +6,10 @@ import Title from "../Title";
 
 export default function EducationSection() {
   return (
-    <div className="flex flex-col space-y-10 mx-auto bg-black border-t-[20px] border-myBorder px-10 py-20 md:space-y-0">
+    <div
+      id="education"
+      className="flex flex-col space-y-10 mx-auto bg-black border-t-[20px] border-myBorder px-10 py-20 md:space-y-0"
+    >
       <div className="mb-10">
         <Title>
           <span
@@ -85,7 +88,7 @@ export default function EducationSection() {
           href="#more-education"
           className="text-gray-400 font-extrabold text-2xl"
         >
-          See More...
+          See More Certs...
         </a>
       </div>
     </div>

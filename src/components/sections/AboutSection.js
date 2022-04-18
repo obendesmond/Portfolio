@@ -4,7 +4,10 @@ import Title from "../Title";
 
 export default function AboutSection() {
   return (
-    <div className="flex flex-col space-y-10 items-center bg-black px-10 py-20 md:space-x-10 md:space-y-0 md:flex-row">
+    <div
+      id="about"
+      className="flex flex-col space-y-10 items-center bg-black px-10 py-20 md:space-x-10 md:space-y-0 md:flex-row"
+    >
       <div>
         <div className="mb-10">
           <Title>

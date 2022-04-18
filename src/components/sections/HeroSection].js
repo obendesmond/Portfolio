@@ -4,7 +4,10 @@ import Title from "../Title";
 
 export default function HeroSection() {
   return (
-    <div className="flex bg-myDark flex-col items-center px-10 -mt-20 align-middle pt-40 pb-10 border-b-[20px] border-myBorder md:flex-row">
+    <div
+      id="hero"
+      className="flex bg-myDark flex-col items-center px-10 -mt-20 align-middle pt-40 pb-10 border-b-[20px] border-myBorder md:flex-row"
+    >
       {/* first part */}
       <div className="flex flex-col space-y-10 mb-20 md:mb-0 ">
         <Title heroTitle>
