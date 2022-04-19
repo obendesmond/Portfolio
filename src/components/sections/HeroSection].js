@@ -27,7 +27,9 @@ export default function HeroSection() {
           <span className="underline decoration-myGreen">React-ive</span>
         </h2>
         <div className="flex flex-row justify-center md:justify-start space-x-10">
-          <Button text="Contact Me" />
+          <a href="#contact">
+            <Button text="Contact Me" />
+          </a>
           <Button text="Download CV" />
         </div>
       </div>
