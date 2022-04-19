@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <Zoom in>
       <div className="container flex flex-row max-w-2xl sticky top-0 z-50 bg-clip-padding justify-around items-center bg-myDark bg-opacity-80 backdrop-blur-[2px] border-2 border-myYellow border-t-0 mx-auto rounded-b-full md:justify-center">
-        <a href="#hero" className="-ml-14">
+        <a href="#hero" className="-ml-14 outline-none">
           <Image
             width={250}
             height={60}
@@ -51,7 +51,7 @@ export default function Header() {
         </div>
         <div
           onClick={handleMenuOpen}
-          className="cursor-pointer flex md:hidden text-myYellow my-auto"
+          className="cursor-pointer flex outline-none text-myYellow my-auto md:hidden"
         >
           {menuOpen ? (
             <MenuOpenIcon fontSize="large" />
