@@ -31,10 +31,11 @@ export default function TestimonialsSection() {
           </div>
           <div className="mb-10">
             <BodyText>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
-              nihil corrupti eius sapiente impedit temporibus deserunt
-              praesentium? Delectus nesciunt, ducimus illum libero porro a
-              earum, odit soluta ut maiores ratione?
+              I&apos;m really happy with your determination, communication and
+              consistency to finish this project Desmond. I know it wasn't easy,
+              but I knew you could do it. Your helpful attitude makes it clear
+              that you can continue to take on new challenges and grow with the
+              company. Thank you for your extra effort Desmond.
             </BodyText>
           </div>
           <p className="text-gray-400 text-xl text-left font-bold">@Perick</p>
