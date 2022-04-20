@@ -9,6 +9,7 @@ import EducationSection from "../components/sections/EducationSection";
 import PortfolioSection from "../components/sections/PortfolioSection";
 import TestimonialsSection from "../components/sections/TestimonialsSection";
 import ContactSection from "../components/sections/ContactSection";
+import FooterSection from "../components/sections/FooterSection";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <PortfolioSection />
       <TestimonialsSection />
       <ContactSection />
+      <FooterSection />
     </div>
   );
 }
