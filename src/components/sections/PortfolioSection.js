@@ -301,12 +301,12 @@ export default function PortfolioSection() {
         </div>
       </div>
 
-      <div className="pt-10">
+      <div className="py-10">
         <a
           href="#more-education"
           className="text-gray-400 font-extrabold text-2xl"
         >
-          See More Work...
+          Load More Work...
         </a>
       </div>
     </div>

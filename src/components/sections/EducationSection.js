@@ -88,7 +88,7 @@ export default function EducationSection() {
           href="#more-education"
           className="text-gray-400 font-extrabold text-2xl"
         >
-          See More Certs...
+          Load More Certs...
         </a>
       </div>
     </div>
