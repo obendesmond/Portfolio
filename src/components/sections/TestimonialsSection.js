@@ -5,6 +5,19 @@ import Skill from "../Skill";
 import Title from "../Title";
 
 export default function TestimonialsSection() {
+  const testimonials = [
+    {
+      id: 1,
+      img: "/assets/testimonials/Perick.webp",
+      name: "@Perick (UI/UX Designer)",
+      text: `I&apos;m really happy with your determination, communication and
+              consistency to finish this project Desmond. I know it wasn&apos;t
+              easy, but I knew you could do it. Your helpful attitude makes it
+              clear that you can continue to take on new challenges and grow
+              with the company. Thank you for your extra effort Desmond.`,
+    },
+  ];
+
   return (
     <div
       id="education"

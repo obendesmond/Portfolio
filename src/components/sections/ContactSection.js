@@ -24,6 +24,10 @@ export default function ContactSection() {
         <div className="flex flex-col-reverse items-center justify-center md:flex-row md:space-x-10">
           <div className="flex-col self-start mt-5 w-full rounded-lg">
             <div className="p-5 rounded-t-xl">
+              <p className="text-white">Official Address</p>
+              <p className="text-gray-400">Cameroon, Untarred Malingo Street</p>
+            </div>
+            <div className="p-5 rounded-t-xl">
               <p className="text-white">Official Email</p>
               <p className="text-gray-400">obendesmond2@gmail.com</p>
             </div>
