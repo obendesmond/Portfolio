@@ -10,6 +10,7 @@ export default function Card({ imgSrc, logos, courseLink }) {
       <IconButton
         disableRipple
         className="cursor-pointer text-white bg-myGreen hover:text-myDark hover:bg-myYellow"
+        style={{ color: "white", backgroundColor: "#009743" }}
       >
         <Icon />
       </IconButton>
