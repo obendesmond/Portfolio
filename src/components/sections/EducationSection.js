@@ -1,10 +1,26 @@
-import Image from "next/image";
-import BodyText from "../BodyText";
+import React, { useState, useEffect } from "react";
 import Card from "../Card";
-import Skill from "../Skill";
 import Title from "../Title";
+import certificates from "../../data/certificates";
 
 export default function EducationSection() {
+  const [numOfCerts, setNumOfCerts] = useState(3);
+  const totalCerts = certificates.length;
+  const diff = totalCerts - numOfCerts;
+
+  const slicedData = certificates.slice(0, numOfCerts);
+
+  const handleLoadMore = () => {
+    if (diff >= 3) setNumOfCerts(numOfCerts + 3);
+    else setNumOfCerts(numOfCerts + diff);
+
+    console.log(`Num of Certs: ${numOfCerts}
+      Certs: ${certificates.length}
+    `);
+  };
+
+  const handleLoadLess = () => setNumOfCerts(3);
+
   return (
     <div
       id="education"
@@ -22,8 +38,8 @@ export default function EducationSection() {
       </div>
 
       {/* experience  */}
-      <div className=" flex flex-col justify-around items-center pt-10 pb-10 space-y-20 lg:space-y-0 lg:flex-row">
-        <div className="flex flex-col space-y-10 items-center">
+      <div className=" flex flex-col justify-around items-center pt-10 pb-10 space-y-20 md:space-y-0 md:flex-row">
+        <div className="flex flex-col space-y-10 items-center px-5">
           <div className="-mb-10 h-7 w-7 rounded-full bg-myYellow"></div>
           <div className="text-center leading-2">
             <h1 className="text-xl text-gray-400">2016 - 2020</h1>
@@ -33,7 +49,7 @@ export default function EducationSection() {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-10 items-center">
+        <div className="flex flex-col space-y-10 items-center px-5">
           <div className="-mb-10 h-7 w-7 rounded-full bg-myYellow"></div>
           <div className="text-center leading-2">
             <h1 className="text-xl text-gray-400">2018 - 2019</h1>
@@ -43,7 +59,7 @@ export default function EducationSection() {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-10 items-center">
+        <div className="flex flex-col space-y-10 items-center px-5">
           <div className="-mb-10 h-7 w-7 rounded-full bg-myYellow"></div>
           <div className="text-center leading-2">
             <h1 className="text-xl text-gray-400">
@@ -57,39 +73,28 @@ export default function EducationSection() {
       </div>
 
       <div className="grid lg:grid-cols-3 gap-6">
-        <Card
-          imgSrc="REACT-Cert.jpg"
-          logos={["react.png", "html.png", "css.png", "git.png"]}
-        />
-        <Card
-          imgSrc="REDUX-Cert.jpg"
-          logos={[
-            "redux-logo.png",
-            "react.png",
-            "html.png",
-            "css.png",
-            "git.png",
-          ]}
-        />
-        <Card
-          imgSrc="MERN-Cert.jpg"
-          logos={["Node.png", "react.png", "html.png", "css.png", "git.png"]}
-        />
-        {/* <Card imgSrc="MERN-Cert.jpg" />
-        <Card imgSrc="REDUX-Cert.jpg" />
-        <Card imgSrc="HTML-Cert3.jpg" />
-        <Card imgSrc="JS-Cert.jpg" />
-        <Card imgSrc="NODE-Cert.jpg" />
-        <Card imgSrc="RN-Cert.jpg" />
-        <Card imgSrc="GIT-Cert.jpg" /> */}
+        {slicedData.map((cert, i) => (
+          <Card key={i} imgSrc={cert.imgSrc} logos={cert.logos} />
+        ))}
       </div>
       <div className="pt-10">
-        <a
-          href="#more-education"
-          className="text-gray-400 font-extrabold text-2xl"
-        >
-          Load More Certs...
-        </a>
+        {numOfCerts === totalCerts ? (
+          <a
+            onClick={handleLoadLess}
+            href="#education"
+            className="text-gray-400 font-extrabold text-2xl"
+          >
+            See Less Certs...
+          </a>
+        ) : (
+          <a
+            onClick={handleLoadMore}
+            href="#load-more-certs"
+            className="text-gray-400 font-extrabold text-2xl"
+          >
+            Load More Certs...
+          </a>
+        )}
       </div>
     </div>
   );

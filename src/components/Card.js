@@ -23,7 +23,7 @@ export default function Card({ imgSrc, logos, courseLink }) {
         width={500}
         height={500}
         objectFit="contain"
-        src={`/assets/` + imgSrc}
+        src={`/assets/certs/` + imgSrc}
         alt="reactjs"
         style={{ marginTop: "-45px" }}
       />
@@ -32,7 +32,7 @@ export default function Card({ imgSrc, logos, courseLink }) {
           {logos.map(logo => (
             <Image
               key={logo}
-              src={`/assets/` + logo}
+              src={`/assets/logos/` + logo}
               height={30}
               width={30}
               objectFit="contain"
