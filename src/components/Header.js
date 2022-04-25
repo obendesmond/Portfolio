@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <Zoom in>
-      <div className="container flex flex-row max-w-2xl py-2 sticky top-0 z-50 bg-clip-padding justify-around items-center rounded-xl bg-myDark bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center md:mt-16">
+      <div className="-mb-80 container flex flex-row max-w-2xl py-2 sticky top-0 z-50 bg-clip-padding justify-around items-center rounded-xl bg-myDark bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center md:mt-16">
         {/* <a href="#hero" className="-ml-14 outline-none">
           <Image
             width={250}

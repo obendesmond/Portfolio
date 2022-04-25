@@ -13,7 +13,7 @@ import FooterSection from "../components/sections/FooterSection";
 
 export default function Home() {
   return (
-    <div className="selection:bg-white selection:text-myOrange">
+    <div className="selection:bg-white selection:text-myOrange bg-myDark">
       <Head>
         <title>Ako Desmond Oben</title>
         <meta
@@ -23,15 +23,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <ContactLinks />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <EducationSection />
-      <PortfolioSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <div className="flex flex-col space-y-60 px-6 md:px-16">
+        <Header />
+        <ContactLinks />
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        {/* <EducationSection /> */}
+        {/* <PortfolioSection /> */}
+        {/* <TestimonialsSection /> */}
+        {/* <ContactSection /> */}
+      </div>
       <FooterSection />
     </div>
   );

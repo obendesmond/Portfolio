@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function BodyText({ text, children }) {
+export default function BodyText({ children }) {
   return (
-    <p className="first-letter:text-6xl indent-10 md:font-mono text-gray-400 text-xl text-justify ">
+    <h2 className="text-sm text-justify text-white leading-6 md:text-center">
       {children}
-    </p>
+    </h2>
   );
 }

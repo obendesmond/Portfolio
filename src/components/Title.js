@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function Title({ children, right, heroTitle }) {
+export default function Title({ children, left, right, center }) {
   return (
     <h1
-      className={`leading-[80px] ${
-        heroTitle ? "text-7xl" : "text-5xl"
-      } md:text-8xl font-bold text-center text-white ${
-        right ? "md:text-right" : "md:text-left"
-      }`}
+      className={`leading-[60px] text-center text-6xl font-bold text-white ${
+        left && "md:tex-left"
+      } ${right && "md:tex-left"} ${
+        center && "md:tex-center"
+      } md:text-[80px] md:leading-[80px]`}
     >
       {children}
     </h1>

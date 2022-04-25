@@ -6,7 +6,7 @@ export default function SkillsSection() {
   return (
     <div
       id="skills"
-      className="flex flex-col space-y-10 mx-auto bg-myDark border-t-[20px] border-myBorder px-10 py-20 md:space-y-0"
+      className="flex flex-col space-y-10 mx-auto bg-myDark py-20 md:space-y-0"
     >
       {/* top title */}
       <div className="mb-10">
