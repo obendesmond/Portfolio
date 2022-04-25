@@ -21,10 +21,12 @@ export default function HeroSection() {
           <span className="underline decoration-myOrange">React-ive</span>
         </h2>
 
-        <div className="flex flex-row justify-center md:justify-start space-x-10">
-          <a href="#contact">
-            <Button text="Contact Me" bordered />
-          </a>
+        <div className="flex flex-col justify-center space-y-5 md:justify-start md:flex-row md:space-x-10">
+          <Button
+            text="Contact Me"
+            onClick={() => window.location.replace("#about")}
+            bordered
+          />
           <Button text="Download CV" />
         </div>
       </div>

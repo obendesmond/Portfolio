@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="flex flex-col space-y-60 px-6 md:px-16">
         <Header />
-        <ContactLinks />
+        {/* <ContactLinks /> */}
         <HeroSection />
         <AboutSection />
         <SkillsSection />
