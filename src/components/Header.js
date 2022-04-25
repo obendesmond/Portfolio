@@ -13,8 +13,8 @@ export default function Header() {
 
   return (
     <Zoom in>
-      <div className="container flex flex-row max-w-2xl sticky top-0 z-50 bg-clip-padding justify-around items-center bg-myDark bg-opacity-80 backdrop-blur-[2px] border-2 border-myYellow border-t-0 mx-auto rounded-b-full md:justify-center">
-        <a href="#hero" className="-ml-14 outline-none">
+      <div className="container flex flex-row max-w-2xl py-2 sticky top-0 z-50 bg-clip-padding justify-around items-center rounded-xl bg-myDark bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center md:mt-16">
+        {/* <a href="#hero" className="-ml-14 outline-none">
           <Image
             width={250}
             height={60}
@@ -22,32 +22,13 @@ export default function Header() {
             alt="desmond"
             objectFit="contain"
           />
-        </a>
+        </a> */}
         <div className="hidden md:flex flex-row space-x-10 my-auto text-white">
-          <a
-            href="#about"
-            className="hover:underline hover:text-myGreen hover:decoration-myYellow"
-          >
-            About
-          </a>
-          <a
-            href="#skills"
-            className="hover:underline hover:text-myGreen hover:decoration-myYellow"
-          >
-            Skills
-          </a>
-          <a
-            href="#education"
-            className="hover:underline hover:text-myGreen hover:decoration-myYellow"
-          >
-            Education
-          </a>
-          <a
-            href="#portfolio"
-            className="hover:underline hover:text-myGreen hover:decoration-myYellow"
-          >
-            Portfolio
-          </a>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#portfolio">Portfolio</a>
         </div>
         <div
           onClick={handleMenuOpen}

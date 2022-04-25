@@ -1,5 +1,5 @@
 import AboutSection from "../components/sections/AboutSection";
-import HeroSection from "../components/sections/HeroSection]";
+import HeroSection from "../components/sections/HeroSection";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Head from "next/head";
@@ -13,7 +13,7 @@ import FooterSection from "../components/sections/FooterSection";
 
 export default function Home() {
   return (
-    <div className="selection:bg-myYellow selection:text-myGreen">
+    <div className="selection:bg-white selection:text-myOrange">
       <Head>
         <title>Ako Desmond Oben</title>
         <meta

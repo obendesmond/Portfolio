@@ -9,8 +9,10 @@ module.exports = {
       colors: {
         myGreen: "#009743",
         myYellow: "#ffcb0a",
-        myDark: "#0F172A",
+        myDark: "#020D16",
         myBorder: "#0F102A",
+        myOrange: "#F09329",
+        myDark2: "#1A1A17",
       },
     },
     screens: {

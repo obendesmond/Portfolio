@@ -1,9 +1,13 @@
 import React from "react";
 
-export default function Button({ text, Icon }) {
+export default function Button({ text, bordered }) {
   return (
-    <button className="py-3 px-5 outline-none whitespace-nowrap font-bold text-white border-2 border-myYellow bg-myGreen rounded-full hover:text-black hover:bg-myYellow hover:border-myGreen">
-      {text} {Icon && <Icon />}
+    <button
+      className={`px-5 text-[13px] py-[10px] rounded-lg border-2 border-myOrange text-white ${
+        bordered ? "bg-myDark2" : "bg-myOrange"
+      } md:px-10 md:py-[18px] md:text-[15px]`}
+    >
+      {text}
     </button>
   );
 }
