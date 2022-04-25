@@ -1,8 +1,21 @@
+import { Javascript } from "@mui/icons-material";
 import Image from "next/image";
 import BodyText from "../BodyText";
 import Title from "../Title";
 
 export default function AboutSection() {
+  const oneLogo = (alt, link) => (
+    <div className=" w-10 md:w-auto">
+      <Image
+        width={70}
+        height={70}
+        objectFit="contain"
+        alt={alt}
+        src={`/assets/logos/${link}`}
+      />
+    </div>
+  );
+
   return (
     <div id="about" className="relative flex flex-col space-y-10 items-center">
       <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-[80px] md:leading-[80px]">
@@ -33,81 +46,18 @@ export default function AboutSection() {
       </BodyText>
 
       <div className="flex flex-row flex-wrap justify-center space-x-5">
-        <div className=" w-10 md:w-auto">
-          <Image
-            width={70}
-            height={70}
-            objectFit="contain"
-            alt="javascript logo"
-            src="/assets/logos/js.png"
-          />
-        </div>
-        <div className="w-10 md:w-auto">
-          <Image
-            width={70}
-            height={70}
-            objectFit="contain"
-            alt="react logo"
-            src="/assets/logos/react.png"
-          />
-        </div>
-        <div className="w-10 md:w-auto">
-          <Image
-            width={70}
-            height={70}
-            objectFit="contain"
-            alt="html logo"
-            src="/assets/logos/html.png"
-          />
-        </div>
-        <div className="w-10 md:w-auto">
-          <Image
-            width={70}
-            height={70}
-            objectFit="contain"
-            alt="css logo"
-            src="/assets/logos/css.png"
-          />
-        </div>
-        <div className="w-10 md:w-auto">
-          <Image
-            width={70}
-            height={70}
-            objectFit="contain"
-            alt="firebase logo"
-            src="/assets/logos/firebase.png"
-          />
-        </div>
-        <div className="w-10 md:w-auto">
-          <Image
-            width={70}
-            height={70}
-            objectFit="contain"
-            alt="git logo"
-            src="/assets/logos/git.png"
-          />
-        </div>
-        <div className="w-10 md:w-auto">
-          <Image
-            width={70}
-            height={70}
-            objectFit="contain"
-            alt="tailwindcss logo"
-            src="/assets/logos/tailwindcss.png"
-          />
-        </div>
-        <div className="w-10 md:w-auto">
-          <Image
-            width={70}
-            height={70}
-            objectFit="contain"
-            alt="nextjs logo"
-            src="/assets/logos/next.png"
-          />
-        </div>
+        {oneLogo("javascript logo", "js.png")}
+        {oneLogo("react logo", "react.png")}
+        {oneLogo("html logo", "html.png")}
+        {oneLogo("css logo", "css.png")}
+        {oneLogo("firebase logo", "firebase.png")}
+        {oneLogo("git logo", "git.png")}
+        {oneLogo("tailwindcss logo", "tailwindcss.png")}
+        {oneLogo("nextjs logo", "next.png")}
+        {oneLogo("redux logo", "redux.png")}
       </div>
       {/* absolute circle */}
-      <div className="absolute top-20 left-[20%] p-10 blur-2xl bg-pink-500 rounded-full md:blur-3xl md:p-14 md:-top-40"></div>
+      <div className="absolute top-20 left-[20%] p-10 blur-2xl bg-pink-500 rounded-full md:blur-3xl md:p-14"></div>
     </div>
   );
 }
