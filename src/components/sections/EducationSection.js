@@ -34,7 +34,7 @@ export default function EducationSection() {
   return (
     <div
       id="education"
-      className="flex flex-col justify-center space-y-32 mx-auto bg-myDark"
+      className="relative flex flex-col justify-center space-y-32 mx-auto"
     >
       <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-right md:text-[80px] md:leading-[80px]">
         Education
@@ -67,7 +67,8 @@ export default function EducationSection() {
         <div className="absolute top-0 left-0 p-10 blur-2xl bg-myOrange rounded-full md:blur-3xl md:p-14"></div>
       </div>
 
-      <div className="relative mx-auto grid lg:grid-cols-3 gap-20">
+      {/* cards */}
+      <div className="relative mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-20">
         {slicedData.map((cert, i) => (
           <Card key={i} imgSrc={cert.imgSrc} logos={cert.logos} />
         ))}
@@ -76,12 +77,13 @@ export default function EducationSection() {
         <div className="absolute -top-10 left-60 p-10 blur-2xl bg-pink-500 rounded-full md:blur-2xl md:p-10 md:left-80"></div>
         <div className="absolute bottom-0 right-20 p-10 blur-2xl bg-blue-500 rounded-full md:blur-2xl md:p-10"></div>
       </div>
-      <div className="pt-10">
+
+      <div className="text-center">
         {numOfCerts === totalCerts ? (
           <a
             onClick={handleLoadLess}
-            href="#education"
-            className="text-gray-400 font-extrabold text-2xl"
+            href="#see-less-certs"
+            className="text-white"
           >
             See Less Certs...
           </a>
@@ -89,7 +91,7 @@ export default function EducationSection() {
           <a
             onClick={handleLoadMore}
             href="#load-more-certs"
-            className="text-gray-400 font-extrabold text-2xl"
+            className="text-white"
           >
             Load More Certs...
           </a>
