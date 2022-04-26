@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import Card from "../Card";
 import Title from "../Title";
 import certificates from "../../data/certificates";
+import BodyText from "../BodyText";
 
 export default function EducationSection() {
-  const [numOfCerts, setNumOfCerts] = useState(3);
+  const [numOfCerts, setNumOfCerts] = useState(6);
   const totalCerts = certificates.length;
   const diff = totalCerts - numOfCerts;
 
@@ -19,63 +20,61 @@ export default function EducationSection() {
     `);
   };
 
-  const handleLoadLess = () => setNumOfCerts(3);
+  const handleLoadLess = () => setNumOfCerts(6);
+
+  const oneStage = (title, body) => (
+    <div className="flex flex-col border-l-8 pb-40 border-myOrange space-y-10 items-center px-5">
+      <div className=" flex flex-col text-center space-y-6 md:text-left">
+        <h1 className="text-3xl text-white font-bold">{title}</h1>
+        <p className="text-white leading-5">{body}</p>
+      </div>
+    </div>
+  );
 
   return (
     <div
       id="education"
-      className="flex flex-col space-y-10 mx-auto bg-black border-t-[20px] border-myBorder px-10 py-20 md:space-y-0"
+      className="flex flex-col justify-center space-y-32 mx-auto bg-myDark"
     >
-      <div className="mb-10">
-        <Title>
-          <span
-            className="text-myYellow bg-clip-text text-transparent
-          bg-gradient-to-r from-myYellow to-myGreen"
-          >
-            Education
-          </span>
-        </Title>
-      </div>
+      <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-right md:text-[80px] md:leading-[80px]">
+        Education
+      </h1>
 
       {/* experience  */}
-      <div className=" flex flex-col justify-around items-center pt-10 pb-10 space-y-20 md:space-y-0 md:flex-row">
-        <div className="flex flex-col space-y-10 items-center px-5">
-          <div className="-mb-10 h-7 w-7 rounded-full bg-myYellow"></div>
-          <div className="text-center leading-2">
-            <h1 className="text-xl text-gray-400">2016 - 2020</h1>
-            <p className="text-gray-400 text-xl">
-              University of Buea. <br></br>BTec. Software Engineering
-            </p>
-          </div>
-        </div>
+      <div className=" relative flex flex-col md:flex-row md:items-center md:justify-around">
+        {oneStage(
+          "2016 - 2020",
+          <>
+            University of Buea. <br></br>B.Eng Software Engineering
+          </>
+        )}
+        {oneStage(
+          "2018 - 2019",
+          <>
+            Internship at. <br></br>GPT (myeazyschool)
+          </>
+        )}
+        {oneStage(
+          <>
+            2019 - <span className="text-myGreen">PRESENT</span>
+          </>,
+          <>
+            Internship at. <br></br>GPT (myeazyschool)
+          </>
+        )}
 
-        <div className="flex flex-col space-y-10 items-center px-5">
-          <div className="-mb-10 h-7 w-7 rounded-full bg-myYellow"></div>
-          <div className="text-center leading-2">
-            <h1 className="text-xl text-gray-400">2018 - 2019</h1>
-            <p className="text-gray-400 text-xl">
-              Internship at. <br></br>GPT (myeazyschool)
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col space-y-10 items-center px-5">
-          <div className="-mb-10 h-7 w-7 rounded-full bg-myYellow"></div>
-          <div className="text-center leading-2">
-            <h1 className="text-xl text-gray-400">
-              2019 - <span className="text-myGreen">PRESENT</span>
-            </h1>
-            <p className="text-gray-400 text-xl">
-              Freelancer. <br></br>Freelance at Fiverr and Upwork
-            </p>
-          </div>
-        </div>
+        {/* absolute circle */}
+        <div className="absolute top-0 left-0 p-10 blur-2xl bg-myOrange rounded-full md:blur-3xl md:p-14"></div>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-6">
+      <div className="relative mx-auto grid lg:grid-cols-3 gap-20">
         {slicedData.map((cert, i) => (
           <Card key={i} imgSrc={cert.imgSrc} logos={cert.logos} />
         ))}
+
+        {/* absolute circle */}
+        <div className="absolute -top-10 left-60 p-10 blur-2xl bg-pink-500 rounded-full md:blur-2xl md:p-10 md:left-80"></div>
+        <div className="absolute bottom-0 right-20 p-10 blur-2xl bg-blue-500 rounded-full md:blur-2xl md:p-10"></div>
       </div>
       <div className="pt-10">
         {numOfCerts === totalCerts ? (

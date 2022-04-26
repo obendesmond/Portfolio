@@ -13,7 +13,10 @@ import FooterSection from "../components/sections/FooterSection";
 
 export default function Home() {
   return (
-    <div className="selection:bg-white selection:text-myOrange bg-myDark">
+    <div
+      id="home"
+      className="selection:bg-white selection:text-myOrange bg-myDark"
+    >
       <Head>
         <title>Ako Desmond Oben</title>
         <meta
@@ -29,7 +32,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
-        {/* <EducationSection /> */}
+        <EducationSection />
         {/* <PortfolioSection /> */}
         {/* <TestimonialsSection /> */}
         {/* <ContactSection /> */}

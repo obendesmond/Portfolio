@@ -18,34 +18,28 @@ export default function Card({ imgSrc, logos, courseLink }) {
   );
 
   return (
-    <div className="flex flex-col justify-center">
-      <Image
+    <div
+      className={`rounded-2xl bg-[url('/assets/certs/HTML-Cert3.jpg')] bg-cover bg-no-repeat bg-center w-[300px] h-[200px] md:w-[356px] md:h-[235px]`}
+    >
+      {/* <img
+        className=" rounded-xl mx-auto"
+        src={`/assets/certs/` + imgSrc}
+        alt=""
+        width={500}
+        height={500}
+        objectFit="contain"
+      ></img> */}
+      {/* <Image
         width={500}
         height={500}
         objectFit="contain"
         src={`/assets/certs/` + imgSrc}
         alt="reactjs"
-        style={{ marginTop: "-45px" }}
-      />
-      <div className="flex flex-row justify-between items-center px-2 h-14 -mt-[45px] w-full bg-myDark bg-opacity-80 backdrop-blur-[2px]">
-        <div className=" flex flex-row justify-between flex-[0.5]">
-          {logos.map(logo => (
-            <Image
-              key={logo}
-              src={`/assets/logos/` + logo}
-              height={30}
-              width={30}
-              objectFit="contain"
-              alt={`${logo}`}
-            />
-          ))}
-        </div>
-
-        <div className=" flex flex-row space-x-2 justify-between flex-[0.2]">
-          {ActionLink(VisibilityIcon, "view doc")}
-          {ActionLink(LinkIcon, "see curriculum")}
-        </div>
-      </div>
+        style={{
+          borderRadius: "20px!important",
+          border: "3px solid red !important",
+        }}
+      /> */}
     </div>
   );
 }

@@ -13,6 +13,7 @@ module.exports = {
         myBorder: "#0F102A",
         myOrange: "#F09329",
         myDark2: "#1A1A17",
+        mySkillEmpty: "#6E767C",
       },
     },
     screens: {

@@ -45,18 +45,25 @@ export default function AboutSection() {
         ”.
       </BodyText>
 
-      <div className="flex flex-row flex-wrap justify-center space-x-5">
-        {oneLogo("javascript logo", "js.png")}
-        {oneLogo("react logo", "react.png")}
-        {oneLogo("html logo", "html.png")}
-        {oneLogo("css logo", "css.png")}
-        {oneLogo("firebase logo", "firebase.png")}
-        {oneLogo("git logo", "git.png")}
-        {oneLogo("tailwindcss logo", "tailwindcss.png")}
-        {oneLogo("nextjs logo", "next.png")}
-        {oneLogo("redux logo", "redux.png")}
+      <div className="flex flex-col">
+        <div className="flex flex-row justify-center space-x-5">
+          {oneLogo("javascript logo", "js.png")}
+          {oneLogo("react logo", "react.png")}
+          {oneLogo("html logo", "html.png")}
+          {oneLogo("css logo", "css.png")}
+          <br />
+          {oneLogo("firebase logo", "firebase.png")}
+          {oneLogo("git logo", "git.png")}
+        </div>
+        <div className="flex flex-row justify-center space-x-5">
+          {oneLogo("tailwindcss logo", "tailwindcss.png")}
+          {oneLogo("nextjs logo", "next.png")}
+          {oneLogo("redux logo", "redux.png")}
+          {oneLogo("mui logo", "mui.png")}
+        </div>
       </div>
-      {/* absolute circle */}
+
+      {/* absolute blur circle */}
       <div className="absolute top-20 left-[20%] p-10 blur-2xl bg-pink-500 rounded-full md:blur-3xl md:p-14"></div>
     </div>
   );

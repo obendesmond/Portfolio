@@ -24,7 +24,7 @@ export default function Header() {
           />
         </a> */}
         <div className="hidden md:flex flex-row space-x-10 my-auto text-white">
-          <a href="#hero">Home</a>
+          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
