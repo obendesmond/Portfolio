@@ -124,6 +124,9 @@ export default function PortfolioSection() {
         </div>
       </div>
 
+      {/* gradient container divider */}
+      <div className="bg-gradient-to-b to-[#00052B] from-[#320721] w-full h-20"></div>
+
       {/* load more btn */}
       <div className="text-center">
         <a href="#more-education" className="text-white">

@@ -59,7 +59,7 @@ export default function EducationSection() {
             2019 - <span className="text-myGreen">PRESENT</span>
           </>,
           <>
-            Internship at. <br></br>GPT (myeazyschool)
+            Freelance. <br></br>Freelancer at Fiver and Upwork
           </>
         )}
 
