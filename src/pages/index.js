@@ -34,7 +34,7 @@ export default function Home({ projectsData }) {
       <PortfolioSection projectsData={projectsData} />
       <AboutSection />
       <SkillsSection />
-      <EducationSection />
+      {/* <EducationSection /> */}
       {/* <TestimonialsSection /> */}
       {/* <ContactSection /> */}
       <FooterSection />
