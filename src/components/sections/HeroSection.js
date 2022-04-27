@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <div>
       {/* first part */}
-      <div className="flex flex-col space-y-10 px-16 mt-40">
+      <div className="flex flex-col space-y-10 px-6 mt-40 md:px-16">
         <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-8xl md:leading-[80px]">
           Hi, I am <br /> <span className="text-myOrange">Desmond</span> Oben
         </h1>

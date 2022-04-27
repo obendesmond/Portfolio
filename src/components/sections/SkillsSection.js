@@ -6,9 +6,9 @@ export default function SkillsSection() {
   return (
     <div
       id="skills"
-      className="relative flex flex-col px-16 mt-40 space-y-10 md:items-center md:flex-row md:space-x-14"
+      className="relative flex flex-col px-6 mt-40 space-y-10 md:px-16 md:items-center md:flex-row md:space-x-14 md:justify-between"
     >
-      <div className="flex-[0.6] flex-col space-y-10">
+      <div className="flex-[0.4] flex-col space-y-10">
         {/* top title */}
         <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-[80px] md:leading-[80px]">
           My Skills
@@ -40,7 +40,7 @@ export default function SkillsSection() {
         </p>
       </div>
 
-      <div className="flex-[0.4] flex-col space-y-3">
+      <div className="flex-[0.5] flex-col space-y-3">
         <Skill title="HTML/CSS" percentage={98} />
         <Skill title="Js" percentage={95} />
         <Skill title="ReactJS" percentage={95} />
