@@ -1,15 +1,11 @@
 import React from "react";
 
-export default function Title({ children, left, right, center }) {
+export default function Title({ text, sm, md }) {
   return (
     <h1
-      className={`leading-[60px] text-center text-6xl font-bold text-white ${
-        left && "md:tex-left"
-      } ${right && "md:tex-left"} ${
-        center && "md:tex-center"
-      } md:text-[80px] md:leading-[80px]`}
+      className={`leading-[60px] ${sm} text-6xl font-bold text-white md:${md} md:text-[80px] md:leading-[80px]`}
     >
-      {children}
+      {text}
     </h1>
   );
 }

@@ -19,9 +19,9 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className="relative mt-40 flex flex-col space-y-10 items-center px-6 md:px-16"
+      className="relative pt-40 flex flex-col space-y-10 items-center px-6 md:px-16"
     >
-      <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-[80px] md:leading-[80px]">
+      <h1 className="leading-[60px] text-center text-5xl font-bold text-white md:text-left md:text-[80px] md:leading-[80px]">
         About Me
       </h1>
 
@@ -67,7 +67,7 @@ export default function AboutSection() {
       </div>
 
       {/* absolute blur circle */}
-      <div className="absolute top-20 left-[20%] p-10 blur-2xl bg-pink-500 rounded-full md:blur-3xl md:p-14"></div>
+      <div className="absolute top-52 left-[20%] p-10 blur-2xl bg-pink-500 rounded-full md:blur-3xl md:p-14"></div>
     </div>
   );
 }

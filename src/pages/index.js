@@ -10,10 +10,11 @@ import PortfolioSection from "../components/sections/PortfolioSection";
 import TestimonialsSection from "../components/sections/TestimonialsSection";
 import ContactSection from "../components/sections/ContactSection";
 import FooterSection from "../components/sections/FooterSection";
-
+// data
 import projects from "../data/projects";
+import certificates from "../data/certificates";
 
-export default function Home({ projectsData }) {
+export default function Home({ projectsData, certificates }) {
   return (
     <div
       id="home"
@@ -34,8 +35,8 @@ export default function Home({ projectsData }) {
       <PortfolioSection projectsData={projectsData} />
       <AboutSection />
       <SkillsSection />
-      {/* <EducationSection /> */}
-      {/* <TestimonialsSection /> */}
+      <EducationSection certificatesData={certificates} />
+      <TestimonialsSection />
       {/* <ContactSection /> */}
       <FooterSection />
     </div>
@@ -46,6 +47,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       projectsData: projects,
+      certificatesData: certificates,
     },
   };
 }

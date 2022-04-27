@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../Card";
 import certificates from "../../data/certificates";
 
-export default function EducationSection() {
+export default function EducationSection({ certificatesData }) {
   const [numOfCerts, setNumOfCerts] = useState(6);
   const totalCerts = certificates.length;
   const diff = totalCerts - numOfCerts;
@@ -12,10 +12,7 @@ export default function EducationSection() {
   const handleLoadMore = () => {
     if (diff >= 3) setNumOfCerts(numOfCerts + 3);
     else setNumOfCerts(numOfCerts + diff);
-
-    console.log(`Num of Certs: ${numOfCerts}
-      Certs: ${certificates.length}
-    `);
+    console.log(`CertsData:${certificatesData}`);
   };
 
   const handleLoadLess = () => setNumOfCerts(6);
@@ -32,9 +29,9 @@ export default function EducationSection() {
   return (
     <div
       id="education"
-      className="relative flex flex-col mt-40 px-16 justify-center space-y-32 mx-auto"
+      className="relative flex flex-col pt-40 mb-10 px-6 justify-center space-y-32 mx-auto md:px-16"
     >
-      <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-right md:text-[80px] md:leading-[80px]">
+      <h1 className="leading-[60px] text-center text-5xl font-bold text-white md:text-right md:text-[80px] md:leading-[80px]">
         Education
       </h1>
 
@@ -66,7 +63,7 @@ export default function EducationSection() {
       </div>
 
       {/* cards */}
-      <div className="relative mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-20">
+      <div className="relative mx-auto grid gap-10 md:grid-cols-2 md:gap-20 lg:grid-cols-3">
         {slicedData.map((cert, i) => (
           <Card key={i} imgSrc={cert.imgSrc} logos={cert.logos} />
         ))}

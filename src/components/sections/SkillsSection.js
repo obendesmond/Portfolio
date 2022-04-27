@@ -1,16 +1,14 @@
-import BodyText from "../BodyText";
 import Skill from "../Skill";
-import Title from "../Title";
 
 export default function SkillsSection() {
   return (
     <div
       id="skills"
-      className="relative flex flex-col px-6 mt-40 space-y-10 md:px-16 md:items-center md:flex-row md:space-x-14 md:justify-between"
+      className="relative flex flex-col px-6 pt-40 space-y-10 md:px-16 md:items-center md:flex-row md:space-x-14 md:justify-between"
     >
       <div className="flex-[0.4] flex-col space-y-10">
         {/* top title */}
-        <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-[80px] md:leading-[80px]">
+        <h1 className="leading-[60px] text-center text-5xl font-bold text-white md:text-left md:text-[80px] md:leading-[80px]">
           My Skills
         </h1>
 
@@ -52,7 +50,7 @@ export default function SkillsSection() {
 
       {/* absolute circle */}
       <div className="absolute bottom-0 left-0 p-10 blur-2xl bg-blue-500 rounded-full md:blur-3xl md:p-14"></div>
-      <div className="absolute top-0 right-0 p-10 blur-2xl bg-myOrange rounded-full md:blur-3xl md:p-14"></div>
+      <div className="absolute top-40 right-0 p-10 blur-2xl bg-myOrange rounded-full md:blur-3xl md:p-14"></div>
     </div>
   );
 }

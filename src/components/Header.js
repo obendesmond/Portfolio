@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <Zoom in>
-      <div className="flex flex-row py-5 sticky top-0 z-50 bg-clip-padding justify-around items-center bg-[rgba(0,0,0,.3)] bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center">
+      <div className="flex flex-row py-2 sticky top-0 z-50 bg-clip-padding justify-around items-center bg-[rgba(0,0,0,.3)] bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center md:py-5">
         {/* links */}
         <div className="hidden md:flex flex-row space-x-10 my-auto text-white">
           <a href="#home">Home</a>

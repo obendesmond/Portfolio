@@ -9,7 +9,7 @@ export default function PortfolioSection({ projectsData }) {
       id="portfolio"
       className="relative flex flex-col mx-auto bg-[#00052B] mt-40 pt-20"
     >
-      <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-[80px] md:leading-[80px]">
+      <h1 className="leading-[60px] text-center text-5xl font-bold text-white md:text-[80px] md:leading-[80px]">
         Portfolio
       </h1>
 
