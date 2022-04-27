@@ -4,7 +4,7 @@ import Title from "../Title";
 
 export default function HeroSection() {
   return (
-    <div className="">
+    <div>
       {/* first part */}
       <div className="flex flex-col space-y-10 ">
         <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-8xl md:leading-[80px]">
