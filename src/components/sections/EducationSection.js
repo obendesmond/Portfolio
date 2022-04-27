@@ -32,7 +32,7 @@ export default function EducationSection() {
   return (
     <div
       id="education"
-      className="relative flex flex-col justify-center space-y-32 mx-auto"
+      className="relative flex flex-col mt-40 px-16 justify-center space-y-32 mx-auto"
     >
       <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-right md:text-[80px] md:leading-[80px]">
         Education

@@ -11,7 +11,9 @@ import TestimonialsSection from "../components/sections/TestimonialsSection";
 import ContactSection from "../components/sections/ContactSection";
 import FooterSection from "../components/sections/FooterSection";
 
-export default function Home() {
+import projects from "../data/projects";
+
+export default function Home({ projectsData }) {
   return (
     <div
       id="home"
@@ -26,18 +28,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col space-y-60 px-6 md:px-16">
-        <Header />
-        {/* <ContactLinks /> */}
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        <EducationSection />
-      </div>
-      <PortfolioSection />
+      <Header />
+      {/* <ContactLinks /> */}
+      <HeroSection />
+      <PortfolioSection projectsData={projectsData} />
+      <AboutSection />
+      <SkillsSection />
+      <EducationSection />
       {/* <TestimonialsSection /> */}
       {/* <ContactSection /> */}
       <FooterSection />
     </div>
   );
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      projectsData: projects,
+    },
+  };
 }

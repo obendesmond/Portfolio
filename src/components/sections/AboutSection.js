@@ -5,7 +5,7 @@ import Title from "../Title";
 
 export default function AboutSection() {
   const oneLogo = (alt, link) => (
-    <div className=" w-10 md:w-auto">
+    <div className=" w-10 md:w-auto py-">
       <Image
         width={70}
         height={70}
@@ -17,7 +17,10 @@ export default function AboutSection() {
   );
 
   return (
-    <div id="about" className="relative flex flex-col space-y-10 items-center">
+    <div
+      id="about"
+      className="relative mt-40 flex flex-col space-y-10 items-center px-16"
+    >
       <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-[80px] md:leading-[80px]">
         About Me
       </h1>

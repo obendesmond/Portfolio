@@ -6,7 +6,7 @@ export default function SkillsSection() {
   return (
     <div
       id="skills"
-      className="relative flex flex-col space-y-10 md:items-center md:flex-row md:space-x-14"
+      className="relative flex flex-col px-16 mt-40 space-y-10 md:items-center md:flex-row md:space-x-14"
     >
       <div className="flex-[0.6] flex-col space-y-10">
         {/* top title */}

@@ -13,22 +13,14 @@ export default function Header() {
 
   return (
     <Zoom in>
-      <div className="-mb-36 container flex flex-row max-w-2xl py-2 sticky top-0 z-50 bg-clip-padding justify-around items-center rounded-xl bg-myDark bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center md:mt-16">
-        {/* <a href="#hero" className="-ml-14 outline-none">
-          <Image
-            width={250}
-            height={60}
-            src="/assets/desmond.png"
-            alt="desmond"
-            objectFit="contain"
-          />
-        </a> */}
+      <div className="flex flex-row py-5 sticky top-0 z-50 bg-clip-padding justify-around items-center bg-[rgba(0,0,0,.3)] bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center">
+        {/* links */}
         <div className="hidden md:flex flex-row space-x-10 my-auto text-white">
           <a href="#home">Home</a>
+          <a href="#portfolio">Portfolio</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
-          <a href="#portfolio">Portfolio</a>
         </div>
         <div
           onClick={handleMenuOpen}

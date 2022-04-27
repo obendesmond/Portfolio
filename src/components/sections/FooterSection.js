@@ -8,7 +8,7 @@ export default function FooterSection() {
       <div className="container text-center relative mx-auto">
         <p>
           &copy; {year}. Made with 💜 by{" "}
-          <a href="#hero" className="text-myYellow">
+          <a href="#hero" className="text-myOrange">
             Desmond Oben
           </a>
         </p>
