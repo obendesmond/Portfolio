@@ -22,7 +22,7 @@ export default function Header() {
           {/* <a href="#blog">Blog</a> */}
         </div>
 
-        <div className="flex flex-row text-xl text-white font-bold items-end">
+        <div className="flex flex-row text-xl text-white font-bold items-end md:hidden">
           {/* <div className="block border-8 border-myOrange rounded-full w-10 h-10 md:hidden"></div> */}
           AKO DESMOND OBEN
         </div>

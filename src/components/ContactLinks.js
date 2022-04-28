@@ -34,3 +34,37 @@ export default function ContactLinks() {
     </div>
   );
 }
+
+export function ContactLink2() {
+  return (
+    <div className="flex flex-row mx-auto space-x-5 md:hidden">
+      <div className="cursor-pointer ">
+        <Image
+          width={55}
+          height={55}
+          src="/assets/logos/linkedin.png"
+          objectFit="contain"
+          alt="linked in logo"
+        />
+      </div>
+      <div className=" cursor-pointer">
+        <Image
+          width={55}
+          height={55}
+          src="/assets/logos/git2.png"
+          objectFit="contain"
+          alt="linked in logo"
+        />
+      </div>
+      <div className=" cursor-pointer">
+        <Image
+          width={55}
+          height={55}
+          src="/assets/logos/email.png"
+          objectFit="contain"
+          alt="linked in logo"
+        />
+      </div>
+    </div>
+  );
+}

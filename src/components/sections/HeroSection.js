@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "../Button";
-import Title from "../Title";
+import { ContactLink2 } from "../ContactLinks";
 
 export default function HeroSection() {
   return (
@@ -37,35 +37,7 @@ export default function HeroSection() {
           />
         </div>
         {/* contact links */}
-        <div className="flex flex-row mx-auto space-x-5 md:hidden">
-          <div className="cursor-pointer ">
-            <Image
-              width={55}
-              height={55}
-              src="/assets/logos/linkedin.png"
-              objectFit="contain"
-              alt="linked in logo"
-            />
-          </div>
-          <div className=" cursor-pointer">
-            <Image
-              width={55}
-              height={55}
-              src="/assets/logos/git2.png"
-              objectFit="contain"
-              alt="linked in logo"
-            />
-          </div>
-          <div className=" cursor-pointer">
-            <Image
-              width={55}
-              height={55}
-              src="/assets/logos/email.png"
-              objectFit="contain"
-              alt="linked in logo"
-            />
-          </div>
-        </div>
+        <ContactLink2 />
       </div>
 
       {/* absolute bobles */}
