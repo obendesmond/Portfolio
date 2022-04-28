@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <Zoom in>
-      <div className="flex flex-row py-2 sticky top-0 z-50 bg-clip-padding justify-around items-center bg-[rgba(0,0,0,.3)] bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center md:py-5">
+      <div className="flex flex-row py-2 sticky top-0 z-50 bg-clip-padding justify-center items-center bg-[rgba(0,0,0,.3)] bg-opacity-80 backdrop-blur-[2px] mx-auto md:justify-center md:py-5">
         {/* links */}
         <div className="hidden md:flex flex-row space-x-10 my-auto text-white">
           <a href="#home">Home</a>
@@ -21,6 +21,8 @@ export default function Header() {
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
+          {/* TODDO: add blog later*/}
+          {/* <a href="#blog">Blog</a> */}
         </div>
         <div
           onClick={handleMenuOpen}
@@ -29,7 +31,11 @@ export default function Header() {
           {menuOpen ? (
             <MenuOpenIcon fontSize="large" />
           ) : (
-            <MenuIcon fontSize="large" />
+            // <MenuIcon
+            //   fontSize="large"
+            //   className="border-5 border-myOrange rounded-full"
+            // />
+            <div className="border-8 border-myOrange rounded-full w-10 h-10"></div>
           )}
         </div>
       </div>

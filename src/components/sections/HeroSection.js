@@ -38,7 +38,7 @@ export default function HeroSection() {
         </div>
         {/* contact links */}
         <div className="flex flex-row mx-auto space-x-5 md:hidden">
-          <div className="cursor-pointer hover:bg-myOrange md:bottom-5">
+          <div className="cursor-pointer ">
             <Image
               width={55}
               height={55}
