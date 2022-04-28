@@ -30,6 +30,7 @@ a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+/* For the testimonial slideshow */
 .custom-indicator {
     bottom: -60px;
 }
