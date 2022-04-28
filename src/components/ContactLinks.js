@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ContactLinks() {
   return (
     <div className="hidden fixed bottom-5 right-5 z-10 md:flex md:flex-row md:space-x-5">
-      <div className="cursor-pointer hover:bg-myOrange md:bottom-5">
+      <div className="cursor-pointer">
         <Image
           width={55}
           height={55}
