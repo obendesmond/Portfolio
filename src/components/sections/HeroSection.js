@@ -36,6 +36,36 @@ export default function HeroSection() {
             onClick={() => window.location.replace("#about")}
           />
         </div>
+        {/* contact links */}
+        <div className="flex flex-row mx-auto space-x-5 md:hidden">
+          <div className="cursor-pointer hover:bg-myOrange md:bottom-5">
+            <Image
+              width={55}
+              height={55}
+              src="/assets/logos/linkedin.png"
+              objectFit="contain"
+              alt="linked in logo"
+            />
+          </div>
+          <div className=" cursor-pointer">
+            <Image
+              width={55}
+              height={55}
+              src="/assets/logos/git2.png"
+              objectFit="contain"
+              alt="linked in logo"
+            />
+          </div>
+          <div className=" cursor-pointer">
+            <Image
+              width={55}
+              height={55}
+              src="/assets/logos/email.png"
+              objectFit="contain"
+              alt="linked in logo"
+            />
+          </div>
+        </div>
       </div>
 
       {/* absolute bobles */}
