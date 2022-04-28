@@ -24,7 +24,7 @@ export default function Header() {
         </div>
         <div
           onClick={handleMenuOpen}
-          className="cursor-pointer flex outline-none text-myYellow my-auto md:hidden"
+          className="cursor-pointer flex outline-none text-myOrange my-auto md:hidden"
         >
           {menuOpen ? (
             <MenuOpenIcon fontSize="large" />

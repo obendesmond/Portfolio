@@ -6,7 +6,11 @@ export default function HeroSection() {
   return (
     <div>
       {/* first part */}
-      <div className="flex flex-col space-y-10 px-6 mt-32 md:mt-40 md:px-16">
+      <div className="flex flex-col space-y-10 px-6 mt-20 md:mt-40 md:px-16">
+        <div
+          className={`flex bg-[url('/assets/desmond.png')] bg-cover bg-no-repeat w-48 h-48 rounded-full self-center md:hidden`}
+        ></div>
+
         <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-8xl md:leading-[80px]">
           Hi, I am <br /> <span className="text-myOrange">Desmond</span> Oben
         </h1>
