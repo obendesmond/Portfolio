@@ -37,7 +37,7 @@ export default function Home({ projectsData, certificates }) {
       <SkillsSection />
       <EducationSection certificatesData={certificates} />
       <TestimonialsSection />
-      {/* <ContactSection /> */}
+      <ContactSection />
       <FooterSection />
     </div>
   );
