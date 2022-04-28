@@ -35,9 +35,9 @@ export default function ContactLinks() {
   );
 }
 
-export function ContactLink2() {
+export function ContactLinks2({ showOnMd }) {
   return (
-    <div className="flex flex-row mx-auto space-x-5 md:hidden">
+    <div className={`flex flex-row space-x-5 ${!showOnMd && "md:hidden"}`}>
       <div className="cursor-pointer ">
         <Image
           width={55}

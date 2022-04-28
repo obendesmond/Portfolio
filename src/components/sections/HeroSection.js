@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "../Button";
-import { ContactLink2 } from "../ContactLinks";
+import { ContactLinks2 } from "../ContactLinks";
 
 export default function HeroSection() {
   return (
@@ -35,9 +35,11 @@ export default function HeroSection() {
             text="Download CV"
             onClick={() => window.location.replace("#about")}
           />
+          {/* contact links */}
+          <div className="self-center">
+            <ContactLinks2 />
+          </div>
         </div>
-        {/* contact links */}
-        <ContactLink2 />
       </div>
 
       {/* absolute bobles */}

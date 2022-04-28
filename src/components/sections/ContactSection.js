@@ -1,7 +1,5 @@
-import BodyText from "../BodyText";
-import Button from "../Button";
-import Skill from "../Skill";
-import Title from "../Title";
+import Image from "next/image";
+import { ContactLinks2 } from "../ContactLinks";
 
 export default function ContactSection() {
   return (
@@ -14,17 +12,20 @@ export default function ContactSection() {
       <div className="container mx-auto border border-myOrange rounded-lg">
         <div className="flex flex-col-reverse items-center justify-center md:flex-row md:space-x-10">
           <div className="flex-col self-start mt-5 w-full rounded-lg">
-            <div className="p-5 rounded-t-xl">
+            <div className="p-5">
               <p className="text-white">Official Address</p>
               <p className="text-gray-400">Cameroon, Untarred Malingo Street</p>
             </div>
-            <div className="p-5 rounded-t-xl">
+            <div className="p-5">
               <p className="text-white">Official Email</p>
               <p className="text-gray-400">obendesmond2@gmail.com</p>
             </div>
-            <div className="p-5 rounded-b-xl">
+            <div className="p-5">
               <p className="text-white">Official Contact</p>
               <p className="text-gray-400">+237 653491687</p>
+            </div>
+            <div className="p-5 ">
+              <ContactLinks2 showOnMd />
             </div>
           </div>
           <div className="space-y-10 max-w-xl flex-col p-5 justify-between">
