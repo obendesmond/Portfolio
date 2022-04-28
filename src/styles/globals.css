@@ -29,3 +29,18 @@ select,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
+.custom-indicator {
+    bottom: -60px;
+}
+/* the li of this class is each small div that has the small image */
+.custom-indicator li {
+    width:100px;
+    height: 100px;
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+}
+.custom-indicator li.slick-active {
+    transform: translateY(-10px);
+    filter: grayscale(0%);
+}
