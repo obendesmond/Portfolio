@@ -43,7 +43,7 @@ function SwipeableEdgeDrawer(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <div>
+    <div className="flex z-50 md:hidden">
       <Global
         styles={{
           ".MuiDrawer-root > .MuiPaper-root": {
@@ -55,7 +55,7 @@ function SwipeableEdgeDrawer(props) {
 
       <div
         onClick={toggleDrawer(true)}
-        className="cursor-pointer z-100 outline-none border border-myGreen my-auto md:hidden"
+        className="cursor-pointer outline-none border border-myGreen my-auto md:hidden"
       >
         {open ? (
           <div className="block border-8 border-myOrange rounded-xl w-10 h-10 md:hidden"></div>

@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Button from "../Button";
-import { ContactLinks2 } from "../ContactLinks";
-import CustomDrawer from "../CustomDrawer";
+import ContactLinks from "../ContactLinks";
 
 export default function HeroSection() {
   return (
-    <div>
+    <div className="flex flex-row justify-center px-6 mt-20 md:mt-40 md:px-16 md:justify-between">
       {/* first part */}
-      <div className="flex flex-col space-y-10 px-6 mt-20 md:mt-40 md:px-16">
+      <div className="flex flex-col space-y-10 ">
         <div
           className={`flex bg-[url('/assets/desmond.png')] bg-cover bg-no-repeat w-48 h-48 rounded-full self-center md:hidden`}
         ></div>
@@ -38,9 +37,17 @@ export default function HeroSection() {
           />
           {/* contact links */}
           <div className="self-center">
-            <ContactLinks2 />
-            <CustomDrawer />
+            <ContactLinks showOnSm />
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-end space-y-10">
+        <div
+          className={`hidden bg-[url('/assets/desmond.png')] px-16 bg-cover bg-no-repeat w-48 h-48 rounded-full self-center md:flex`}
+        ></div>
+        <div className="self-center">
+          <ContactLinks showOnMd />
         </div>
       </div>
 

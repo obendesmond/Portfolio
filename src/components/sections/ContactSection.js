@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ContactLinks2 } from "../ContactLinks";
+import ContactLinks from "../ContactLinks";
 
 export default function ContactSection() {
   return (
@@ -25,7 +25,7 @@ export default function ContactSection() {
               <p className="text-gray-400">+237 653491687</p>
             </div>
             <div className="p-5 ">
-              <ContactLinks2 showOnMd />
+              <ContactLinks />
             </div>
           </div>
           <div className="space-y-10 max-w-xl flex-col p-5 justify-between">

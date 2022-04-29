@@ -30,7 +30,6 @@ export default function Home({ projectsData, certificates }) {
       </Head>
 
       <Header />
-      <ContactLinks />
       <HeroSection />
       <PortfolioSection projectsData={projectsData} />
       <AboutSection />
