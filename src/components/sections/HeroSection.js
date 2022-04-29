@@ -33,7 +33,8 @@ export default function HeroSection() {
           />
           <Button
             text="Download CV"
-            onClick={() => window.location.replace("#about")}
+            onClick={() => window.open("/assets/akodesmondoben.pdf")}
+            download
           />
           {/* contact links */}
           <div className="self-center">
