@@ -44,8 +44,17 @@ export default function Project({
           </div>
           {/* btn */}
           <div className="flex flex-col justify-center space-y-5 md:space-y-0 md:justify-start md:flex-row md:space-x-10">
-            <Button Icon={VisibilityIcon} text="View Live" bordered />
-            <Button Icon={GitHubIcon} text="View Code" />
+            <Button
+              onClick={() => window.open(liveLink)}
+              Icon={VisibilityIcon}
+              text="View Live"
+              bordered
+            />
+            <Button
+              onClick={() => window.open(codeLink)}
+              Icon={GitHubIcon}
+              text="View Code"
+            />
           </div>
         </div>
       </div>

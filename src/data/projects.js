@@ -1,36 +1,42 @@
 const projects = [
   {
     title: "Desmozon App",
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            officiis, voluptatibus in sunt sapiente eaque aperiam debitis illo
-            itaque saepe facilis ducimus, quod nam similique esse distinctio et!
-            Dolores, minus.`,
-    imgSrc: "desmozon_mac.jpg",
-    tags: ["HTML", "CSS", "JS", "REACTJS", "NEXTJS"],
+    description: `It's a mobile responsive amazon clone - "Watch Now - Include with Prime"`,
+    imgSrc: "desmozon_mac.png",
+    tags: [
+      "REACTJS",
+      "NEXTJS",
+      "TailwindCSS",
+      "HTML",
+      "CSS",
+      "Firebase",
+      "GIT",
+      "Mobile Responsive",
+    ],
     bgColor: "#00052B",
     colorTo: "#310721",
+    liveLink: "https://desmozon.vercel.app/",
+    codeLink: "https://github.com/obendesmond/Desmozon",
   },
   {
-    title: "Obenify Cloud Hosting UI",
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            officiis, voluptatibus in sunt sapiente eaque aperiam debitis illo
-            itaque saepe facilis ducimus, quod nam similique esse distinctio et!
-            Dolores, minus.`,
-    imgSrc: "obenify.jpg",
-    tags: ["HTML", "CSS", "JS", "REACTJS", "NEXTJS"],
+    title: "Obenify Cloud Hosting",
+    description: `It's a mobile responsive user interface for the cloud hosting company; obenify - "Deploy your websites in less than 60 seconds." - Cloud Hosting for Pros.`,
+    imgSrc: "obenify.png",
+    tags: ["HTML", "CSS", "JS", "Git", "Mobile Responsive"],
     bgColor: "#310721",
     colorTo: "#1F4609",
+    liveLink: "https://obenify.netlify.app/",
+    codeLink: "https://github.com/obendesmond/obenify",
   },
   {
-    title: "Obenify Cloud Hosting UI",
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            officiis, voluptatibus in sunt sapiente eaque aperiam debitis illo
-            itaque saepe facilis ducimus, quod nam similique esse distinctio et!
-            Dolores, minus.`,
+    title: "Food Buddy",
+    description: `It's a personal food assistance for "Mr. Doradas" - "Recipe, Menu and Pantry" - Food Planning UI`,
     imgSrc: "obenify.jpg",
-    tags: ["HTML", "CSS", "JS", "REACTJS", "NEXTJS"],
+    tags: ["REACTJS", "HTML", "CSS", "JS", "Git", "Mobile Responsive"],
     bgColor: "#1F4609",
     colorTo: "#00052B",
+    liveLink: "http://recipeplannerapp.herokuapp.com/",
+    codeLink: "https://github.com/obendesmond/recipeApp",
   },
 ];
 
