@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../Button";
 import { ContactLinks2 } from "../ContactLinks";
+import CustomDrawer from "../CustomDrawer";
 
 export default function HeroSection() {
   return (
@@ -38,6 +39,7 @@ export default function HeroSection() {
           {/* contact links */}
           <div className="self-center">
             <ContactLinks2 />
+            <CustomDrawer />
           </div>
         </div>
       </div>

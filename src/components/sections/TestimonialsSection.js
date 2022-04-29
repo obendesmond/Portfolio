@@ -49,7 +49,6 @@ export default function TestimonialsSection() {
         <Image
           objectFit="cover"
           objectPosition="top"
-          borderRadius="50px"
           width="100px"
           height="100px"
           src={`/assets/testimonials/${testimonials[i].img}`}
