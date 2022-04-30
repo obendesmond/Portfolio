@@ -10,6 +10,9 @@ export default function HeroSection() {
         <div
           className={`flex bg-[url('/assets/desmond.png')] bg-cover bg-no-repeat w-48 h-48 rounded-full self-center md:hidden`}
         ></div>
+        <p className="block text-myOrange justify-start text-center md:hidden">
+          2+ Years of ReactJS <br /> 4+ Years of JS
+        </p>
 
         <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-8xl md:leading-[80px]">
           Hi, I am <br /> <span className="text-myOrange">Desmond</span> Oben
@@ -43,11 +46,13 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-end space-y-10">
+      <div className="hidden flex-col justify-end space-y-5 md:flex">
         <div
-          className={`hidden bg-[url('/assets/desmond.png')] px-16 bg-cover bg-no-repeat w-48 h-48 rounded-full self-center md:flex`}
+          className={`flex bg-[url('/assets/desmond.png')] px-16 bg-cover bg-no-repeat w-48 h-48 rounded-full self-center`}
         ></div>
-        <p className="text-myOrange">2+ Years of ReactJS</p>
+        <p className="text-myOrange text-center">
+          2+ Years of ReactJS <br /> 4+ Years of JS
+        </p>
         <div className="self-center">
           <ContactLinks showOnMd />
         </div>
