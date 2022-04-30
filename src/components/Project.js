@@ -20,7 +20,7 @@ export default function Project({
         className={`bg-[${bgColor}] pb-10 pt-10 flex flex-col-reverse justify-between items-start md:grid md:grid-cols-2 md:pb-0 gap-20 md:pt-52`}
       >
         <div
-          className={`hidden bg-[url('/assets/mockups/obenify.jpg')] bg-cover bg-no-repeat shadow-[36px_-20px_66px_-4px_rgba(0,0,0,0.37)] w-full h-[420px] rounded-tr-[40px] md:flex`}
+          className={`hidden bg-[url('/assets/projects/${imgSrc}')] bg-right-top bg-no-repeat shadow-[36px_-20px_66px_-4px_rgba(0,0,0,0.37)] w-full h-[420px] rounded-tr-[40px] md:flex`}
         ></div>
 
         <div className=" flex flex-col space-y-5 px-6 mt-24 md:mt-0">

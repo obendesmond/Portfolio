@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Food Buddy",
     description: `It's a personal food assistance for "Mr. Doradas" - "Recipe, Menu and Pantry" - Food Planning UI`,
-    imgSrc: "obenify.jpg",
+    imgSrc: "foodbuddy.png",
     tags: ["REACTJS", "HTML", "CSS", "JS", "Git", "Mobile Responsive"],
     bgColor: "#1F4609",
     colorTo: "#00052B",
