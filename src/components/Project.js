@@ -28,7 +28,7 @@ export default function Project({
           </div>
           <p className="text-white text-justify">{description}</p>
           <div
-            className={`block bg-[url('/assets/mockups/obenify.jpg')] bg-contain bg-no-repeat  w-full h-[200px] rounded-xl md:hidden`}
+            className={`flex bg-[url('/assets/projects/${imgSrc}')] bg-contain bg-no-repeat  w-full h-[200px] rounded-xl md:hidden`}
           ></div>
 
           <div className="flex flex-wrap space-x-3 space-y-3 items-end justify-center md:justify-start">
