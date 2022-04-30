@@ -47,6 +47,7 @@ export default function HeroSection() {
         <div
           className={`hidden bg-[url('/assets/desmond.png')] px-16 bg-cover bg-no-repeat w-48 h-48 rounded-full self-center md:flex`}
         ></div>
+        <p className="text-myOrange">2+ Years of ReactJS</p>
         <div className="self-center">
           <ContactLinks showOnMd />
         </div>
