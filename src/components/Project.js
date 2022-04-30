@@ -13,7 +13,6 @@ export default function Project({
   bgColor,
   colorTo,
 }) {
-  console.log(imgSrc);
   return (
     <>
       <div
