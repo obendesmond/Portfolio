@@ -35,8 +35,8 @@ export default function HeroSection() {
             bordered
           />
           <Button
-            text="Download CV"
-            onClick={() => window.open("/assets/akodesmondoben.pdf")}
+            text="Download Resume (CV)"
+            onClick={() => window.open("/assets/Ako_Desmond_Oben_Resume.pdf")}
             download
           />
           {/* contact links */}

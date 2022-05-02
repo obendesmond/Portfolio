@@ -34,8 +34,8 @@ export default function PortfolioSection({ projectsData }) {
             </h1>
           </div>
           <p className="text-white text-justify">
-            It&apos;s a mobile responsive amazon clone - &quote;Watch Now -
-            Include with Prime&quote;
+            It&apos;s a mobile responsive amazon clone - &quot;Watch Now -
+            Include with Prime&quot;
           </p>
           <div
             className={`flex bg-[url('/assets/projects/desmozon_mac.png')] bg-contain bg-no-repeat  w-full h-[200px] rounded-xl md:hidden`}
@@ -102,8 +102,8 @@ export default function PortfolioSection({ projectsData }) {
           </div>
           <p className="text-white text-justify">
             It&apos;s a mobile responsive user interface for the cloud hosting
-            company; obenify - &quote;Deploy your websites in less than 60
-            seconds.&quote; - Cloud Hosting for Pros.
+            company; obenify - &quot;Deploy your websites in less than 60
+            seconds.&quot; - Cloud Hosting for Pros.
           </p>
           <div
             className={`flex bg-[url('/assets/projects/obenify.png')] bg-contain bg-no-repeat  w-full h-[200px] rounded-xl md:hidden`}
@@ -160,8 +160,8 @@ export default function PortfolioSection({ projectsData }) {
             </h1>
           </div>
           <p className="text-white text-justify">
-            It&apos;s a personal food assistance for &quote;Mr. Doradas&quote; -
-            &quote;Recipe, Menu and Pantry&quote; - Food Planning UI
+            It&apos;s a personal food assistance for &quot;Mr. Doradas&quot; -
+            &quot;Recipe, Menu and Pantry&quot; - Food Planning UI
           </p>
           <div
             className={`flex bg-[url('/assets/projects/foodbuddy.png')] bg-contain bg-no-repeat  w-full h-[200px] rounded-xl md:hidden`}
