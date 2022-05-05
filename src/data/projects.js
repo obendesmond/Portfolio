@@ -1,5 +1,15 @@
 const projects = [
   {
+    title: "GPT3",
+    description: `It's an AI landing page`,
+    imgSrc: "gpt3.png",
+    tags: ["ReactJS", "HTML", "CSS", "GIT", "Mobile Responsive"],
+    bgColor: "#00052B",
+    colorTo: "#310721",
+    liveLink: "https://gpt3-done.netlify.app/",
+    codeLink: "https://github.com/obendesmond/gt3",
+  },
+  {
     title: "Desmozon App",
     description: `It's a mobile responsive amazon clone - "Watch Now - Include with Prime"`,
     imgSrc: "desmozon_mac.png",
