@@ -26,7 +26,7 @@ export default function Home({ projectsData, certificates }) {
           name="description"
           content="ako desmond oben's portfolio website created by ako desmond oben"
         />
-        <link rel="icon" href="/fav.png" />
+        <link rel="icon" href="/fav.svg" />
       </Head>
 
       <Header />
