@@ -24,8 +24,8 @@ export default function HeroSection() {
         </p>
 
         <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-7xl md:leading-[80px]">
-          Hi, I'm a<br /> <span className="text-myOrange">ReactJS</span> Super
-          Hero
+          Hi, I&apos;m a<br /> <span className="text-myOrange">ReactJS</span>{" "}
+          Super Hero
         </h1>
 
         <h2 className="text-sm text-center text-white md:text-left">
