@@ -14,10 +14,11 @@ export default function Project({
   bgColor,
   colorTo,
 }) {
+  console.log(bgColor);
   return (
     <>
       <div
-        className={`bg-[${bgColor}] pb-10 pt-10 flex flex-col-reverse justify-between items-start md:grid md:grid-cols-2 md:pb-0 gap-20 md:pt-52`}
+        className={`bg-[${bgColor}] border-b-2 border-white pb-10 pt-10 flex flex-col-reverse justify-between items-start md:grid md:grid-cols-2 md:pb-0 gap-20 md:pt-52`}
       >
         <div className="hidden relative shadow-[36px_-20px_66px_-4px_rgba(0,0,0,0.37)]  w-full h-[420px] rounded-tr-[40px]  md:flex overflow-hidden">
           <Image
@@ -33,12 +34,12 @@ export default function Project({
           <div className="text-center md:text-left">
             <h1 className="text-white text-2xl font-bold uppercase">{title}</h1>
           </div>
-          <p className="text-white text-justify">{description}</p>
+          <p className="text-white  text-center md:text-left">{description}</p>
           <div className="relative flex w-full h-[200px] rounded-xl  md:hidden overflow-hidden">
             <Image
               src={`/assets/projects/${imgSrc}`}
               objectFit="contain"
-              objectPosition="right top"
+              objectPosition="center center"
               layout="fill"
               alt={title}
             />

@@ -20,7 +20,7 @@ export default function Header() {
         </div>
 
         <div className="flex flex-row text-xl text-white font-bold items-end md:hidden">
-          AKO DESMOND OBEN
+          {open ? "REACT SUPER HERO" : "AKO DESMOND OBEN"}
         </div>
 
         <div

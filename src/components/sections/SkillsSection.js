@@ -44,7 +44,9 @@ export default function SkillsSection() {
         <Skill title="ReactJS" percentage={95} />
         <Skill title="Redux" percentage={95} />
         <Skill title="NextJS" percentage={90} />
+        <Skill title="Typescript" percentage={80} />
         <Skill title="Firebase" percentage={85} />
+        <Skill title="Solidity" percentage={65} />
         <Skill title="Git" percentage={85} />
       </div>
 

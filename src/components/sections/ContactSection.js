@@ -10,6 +10,8 @@ export default function ContactSection() {
     window.open(
       `mailto:obendesmond2@gmail.com?subject=${subject}&body=${message}`
     );
+    setSubject("");
+    setMessage("");
   };
 
   return (
