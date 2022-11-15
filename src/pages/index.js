@@ -31,7 +31,7 @@ export default function Home({ projectsData, certificates }) {
 
       <Header />
       <HeroSection />
-      <PortfolioSection projectsData={projectsData} />
+      <PortfolioSection />
       <AboutSection />
       <SkillsSection />
       <EducationSection certificatesData={certificates} />
@@ -45,7 +45,6 @@ export default function Home({ projectsData, certificates }) {
 export async function getStaticProps(context) {
   return {
     props: {
-      projectsData: projects,
       certificatesData: certificates,
     },
   };

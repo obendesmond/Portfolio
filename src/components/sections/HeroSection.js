@@ -2,14 +2,23 @@ import Image from "next/image";
 import Button from "../Button";
 import ContactLinks from "../ContactLinks";
 
+const desmond = "/assets/desmond_oben.jpeg";
+
 export default function HeroSection() {
   return (
     <div className="flex flex-row justify-center px-6 mt-20 md:mt-40 md:px-16 md:justify-between">
       {/* first part */}
       <div className="flex flex-col space-y-10 ">
-        <div
-          className={`flex bg-[url('/assets/desmond.png')] bg-cover bg-no-repeat w-48 h-48 rounded-full self-center md:hidden`}
-        ></div>
+        <div className="relative flex w-48 h-48 rounded-full overflow-hidden self-center md:hidden">
+          <Image
+            src={desmond}
+            alt="desmond oben ako"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top center"
+          />
+        </div>
+
         <p className="block text-myOrange justify-start text-center md:hidden">
           2+ Years of ReactJS <br /> 4+ Years of JS
         </p>
@@ -47,9 +56,15 @@ export default function HeroSection() {
       </div>
 
       <div className="hidden flex-col justify-end space-y-5 md:flex">
-        <div
-          className={`flex bg-[url('/assets/desmond.png')] px-16 bg-cover bg-no-repeat w-48 h-48 rounded-full self-center`}
-        ></div>
+        <div className="relative flex px-16 w-48 h-48 rounded-full self-center overflow-hidden">
+          <Image
+            src={desmond}
+            alt="desmond oben ako"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top center"
+          />
+        </div>
         <p className="text-myOrange text-center">
           2+ Years of ReactJS <br /> 4+ Years of JS
         </p>
