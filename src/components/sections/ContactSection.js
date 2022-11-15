@@ -1,7 +1,17 @@
 import Image from "next/image";
 import ContactLinks from "../ContactLinks";
+import { useState } from "react";
 
 export default function ContactSection() {
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = () => {
+    window.open(
+      `mailto:obendesmond2@gmail.com?subject=${subject}&body=${message}`
+    );
+  };
+
   return (
     <div id="contact" className="bg-[#051926] pt-40 px-10 py-20 md:space-y-0">
       {/* top title */}
@@ -31,16 +41,8 @@ export default function ContactSection() {
           <div className="space-y-10 max-w-xl flex-col p-5 justify-between">
             <input
               type="text"
-              placeholder="Enter name"
-              className="text-white outline-none bg-transparent border border-myOrange w-full py-2 px-4 rounded-lg"
-            />
-            <input
-              type="email"
-              placeholder="example@expert.com"
-              className="text-white outline-none bg-transparent border border-myOrange w-full py-2 px-4 rounded-lg"
-            />
-            <input
-              type="text"
+              value={subject}
+              onChange={e => setSubject(e.target.value)}
               placeholder="Enter subject"
               className="text-white outline-none bg-transparent border border-myOrange w-full py-2 px-4 rounded-lg"
             />
@@ -51,9 +53,14 @@ export default function ContactSection() {
               id="messageArea"
               cols="30"
               rows="5"
+              value={message}
+              onChange={e => setMessage(e.target.value)}
             />
 
-            <button className="w-full transition ease-in-out px-5 text-[13px] py-[10px] rounded-lg border-2 border-myOrange bg-myOrange text-black hover:text-white hover:bg-opacity-20 md:px-6 md:py-[10px] md:text-[15px]">
+            <button
+              onClick={handleSubmit}
+              className="w-full transition ease-in-out px-5 text-[13px] py-[10px] rounded-lg border-2 border-myOrange bg-myOrange text-black hover:text-white hover:bg-opacity-20 md:px-6 md:py-[10px] md:text-[15px]"
+            >
               Submit
             </button>
           </div>

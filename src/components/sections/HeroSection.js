@@ -20,11 +20,12 @@ export default function HeroSection() {
         </div>
 
         <p className="block text-myOrange justify-start text-center md:hidden">
-          2+ Years of ReactJS <br /> 4+ Years of JS
+          Desmond Oben <br /> 4+ Years of ReactJS
         </p>
 
-        <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-8xl md:leading-[80px]">
-          Hi, I am <br /> <span className="text-myOrange">Desmond</span> Oben
+        <h1 className="leading-[60px] text-center text-6xl font-bold text-white md:text-left md:text-7xl md:leading-[80px]">
+          Hi, I'm a<br /> <span className="text-myOrange">ReactJS</span> Super
+          Hero
         </h1>
 
         <h2 className="text-sm text-center text-white md:text-left">
@@ -66,7 +67,7 @@ export default function HeroSection() {
           />
         </div>
         <p className="text-myOrange text-center">
-          2+ Years of ReactJS <br /> 4+ Years of JS
+          Desmond Oben <br /> 4+ Years of ReactJS
         </p>
         <div className="self-center">
           <ContactLinks showOnMd />
